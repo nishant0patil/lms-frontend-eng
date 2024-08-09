@@ -1,17 +1,19 @@
-#LMS Frontend
+# LMS Frontend
 
-### setup instructions
+### setup instructions 
 
 1. clone the project
-```git clone https://github.com/nishant0patil/lms-frontend-eng.git
-```
 
+```
+git clone https://github.com/nishant0patil/lms-frontend-eng.git
+```
 2. move into the directory
-```cd lms_frontend
+
+```cd lms-frontend-eng
 ```
 
 3. install dependencies
-```npm i
+```npm install
 ```
 
 4. Run the server
