@@ -45,3 +45,28 @@ git clone https://github.com/nishant0patil/lms-frontend-eng.git
 ```npm install @reduxjs/toolkit react-redux react-router-dom react-icons react-chartjs-2 chart.js daisyui axios react-hot-toast @tailwindcss/line-clamp
 ```
 
+### Adding auto import sort for eslint
+
+1. install the plugin
+
+```npm i eslint-plugin-simple-import-sort
+```
+2. Add rule in `.eslint.config.js`
+
+```'simple-import-sort/imports':'error',
+```
+3. Add simple-import-sort in the plugin array of `.eslint.config.js` file
+
+```plugin[
+    ...,"simple-import-sort"
+]
+```
+4. open settings.json in vscode configuration settings
+
+5. Add the following line
+``` "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+
+```
+

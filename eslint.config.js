@@ -18,17 +18,19 @@ export default [
       },
     },
     settings: { react: { version: '18.3' } },
-    plugins: {
+    plugins: [
       react,
-      'react-hooks': reactHooks,
-      'react-refresh': reactRefresh,
-    },
+      'react-hooks',
+      'react-refresh',
+      "simple-import-sort"
+    ],
     rules: {
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
       'react/jsx-no-target-blank': 'off',
+      'simple-import-sort/imports':'error',
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
