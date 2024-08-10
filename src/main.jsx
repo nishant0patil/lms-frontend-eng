@@ -12,11 +12,11 @@ import App from './App.jsx'
 import store from './redux/store.js'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  < Provider store={store}>
+  <Provider store={store}>
   <BrowserRouter>
     <App />
     <Toaster/>
     </BrowserRouter>
-    </ Provider>
+    </Provider>
    
 )

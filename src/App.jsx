@@ -1,20 +1,20 @@
 
-import { useEffect } from 'react'
-import './App.css'
-import toast from 'react-hot-toast'
-
-useEffect(() =>{
-  toast.success('hello')
-})
+import { useEffect } from 'react';
+import './App.css';
+import toast from 'react-hot-toast';
+import Footer from './components/Footer';
 
 function App() {
+  useEffect(() => {
+    toast.success('Hello');
+  }, []); 
+
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        hello
-      </h1>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
