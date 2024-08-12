@@ -1,18 +1,21 @@
 
-import { useEffect } from 'react';
+
 import './App.css';
-import toast from 'react-hot-toast';
-import Footer from './components/Footer';
+import {Routes,Route} from 'react-router-dom'
+import Home from './pages/Home'
+import Notfound from './pages/Notfound';
+
+
 
 function App() {
-  useEffect(() => {
-    toast.success('Hello');
-  }, []); 
+
 
   return (
-    <>
-      <Footer />
-    </>
+    <Routes>
+      <Route path='/' element ={<Home/>} />
+      <Route path='/about' element ={<Aboutus/>} />
+      <Route path='*' element ={<Notfound/>} />
+    </Routes>
   );
 }
 
