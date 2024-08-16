@@ -76,8 +76,10 @@ const authSlice = createSlice({
             state.role="";
             state.data={};
         })
-        })
     }
-})
+        })
+    
+    
+
 
 export default authSlice.reducer
