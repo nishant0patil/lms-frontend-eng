@@ -28,7 +28,10 @@ function HomeLayout ({children})
     function onLogout(e){
         e.preventDefault();
 
-        navigate('')
+        const responce = await dispatch (logout());
+        if(responce?.payload?.data)
+
+        navigate('/')
     }
 
    return(
@@ -72,7 +75,7 @@ function HomeLayout ({children})
         <li className="absolute-bottom-4 w-[90%]">
         <div className="w-full flex items-center justufy-center">
         <button className="btn-primary px-4 py-1 font-semibold rounded-md w-0  ">
-        <Link to='/login'>Login</Link>
+        <Link to='/signin'>Login</Link>
 
         </button>
         <button className="btn-secondary px-4 py-1 font-semibold rounded-md w-0  ">
